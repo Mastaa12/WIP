@@ -1,0 +1,100 @@
+﻿p {
+    color: aqua;
+}
+
+#gruss 
+{
+    color:orangered;
+}
+
+#zwzeile
+{
+    color:yellow;
+}
+
+.Class1
+{
+    color:magenta;
+    background-color:darkgray;
+}
+
+#liste
+{
+    color:aquamarine;
+}
+
+.BoxDemo
+{
+background-color:burlywood;
+width:300px;
+padding:10px;
+border:2.5px solid navy;
+margin:10px;
+
+}
+
+.BlackBox{
+background-color:black;
+width:50px;
+padding:30px;
+border:0px solid navy;
+margin:0px;
+float:left;
+}
+
+.RedBox{
+background-color:red;
+width:50px;
+padding:30px;
+border:0px solid navy;
+margin:0px;
+float:left;
+}
+
+.YellowBox{
+    background-color:gold;
+width:50px;
+padding:30px;
+border:0px solid navy;
+margin:0px;
+float:left;
+}
+
+#header{
+width:100%;
+padding:5px;
+border:5px solid black;
+margin:10px;
+}
+
+#menu{
+width:20%;
+padding:5px;
+border:5px solid black;
+margin:10px;
+float:left;
+}
+
+#main{
+width:40%;
+padding:5px;
+border:5px solid black;
+margin:10px;
+float:left;
+}
+
+#ads{
+width:20%;
+padding:5px;
+border:5px solid black;
+margin:10px;
+float:left;
+}
+
+#footer{
+width:100%;
+padding:1%;
+border:5px solid black;
+margin:10px;
+float:left;
+}

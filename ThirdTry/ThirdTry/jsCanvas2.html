@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jsCanvas</title>
+
+    <script>
+        var canvas;
+        var ctx;
+
+        //Balldaten
+        var bounceX = 50;
+        var bounceY = 50;
+        var directionX = 1;
+        var directionY = 1;
+
+        function init() {
+            canvas = document.getElementById("canvas");
+            ctx = canvas.getContext("2d");
+            canvas.style.border = "red 1px solid";
+            draw();
+            drawBall();
+       
+        }
+
+            function draw(){
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect(0, 0, 50, 50);
+
+              //  ctx.moveTo(100, 100);
+               // ctx.lineTo(200, 200);
+               // ctx.stroke();
+
+                
+             //   ctx.arc(95, 30, 50, 0, 2 * Math.PI);
+             //   ctx.stroke();
+
+                ctx.font = "30px Arial";
+                ctx.fillText("Hey from here", 300, 75);
+                
+            }
+            
+            var clicked;
+
+
+
+
+           /* document.onmousedown = function (ev)
+            {
+                clicked = 1;
+
+            
+                document.onmousemove = function (ev)
+                {
+                    if (clicked == 1) {
+                        ctx.fillStyle = "#FFFF00";
+                        ctx.fillRect(ev.clientX - canvas.offsetLeft, ev.clientY - canvas.offsetTop, 20, 20);                   
+                    }
+
+                    document.onmouseup = function ()
+                    {
+                        clicked = 0;
+                    }
+                                       
+                }  
+            
+
+            }*/
+
+          /* document.onmousemove = function (ev)
+            {
+                ctx.clearRect(0, 0, canvas.width, canvas.height); //Clear Canvas
+                draw(); //Hintergrund zeichnen
+                ctx.fillStyle = "#FFFF00";
+                ctx.fillRect(ev.clientX - canvas.offsetLeft, ev.clientY - canvas.offsetTop, 20, 20);
+           }*/
+
+
+
+            function drawBall() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                draw();
+
+                if (bounceX > canvas.width) {
+                    directionX *= -1;
+                }
+
+                if (bounceX < 0) {
+                    directionX *= -1;
+                }
+
+                if (bounceY > canvas.height) {
+                    directionY *= -1;
+                }
+
+                if (bounceY < 0) {
+                    directionY *= -1;
+                }
+
+                bounceX += 10 * directionX;
+                bounceY += 10 * directionY;
+
+
+               ctx.beginPath();
+               ctx.arc(bounceX, bounceY, 40, 0, 2 * Math.PI);
+               ctx.stroke();
+
+               
+
+
+               console.log("drawBall aufgerufen");
+               //Wiederhole Function Drawball alle 50 ms
+               setTimeout(drawBall, 20);
+           }
+
+        
+
+           document.onkeydown = function (ev)
+           {
+               var key_press = String.fromCharCode(ev.keyCode);
+               switch (key_press)
+               {
+                   case "A":
+                       console.log("A pressed");
+                       break;
+
+
+                   case "D":
+                       console.log("D pressed");
+                       break;
+
+               }
+           }
+
+            
+
+            window.addEventListener("DOMContentLoaded", init, false);
+    </script>
+
+
+
+</head>
+<body>
+    <h1>Canvas</h1>
+
+    <canvas id="canvas" width="600" height="400"></canvas>
+
+
+</body>
+</html>

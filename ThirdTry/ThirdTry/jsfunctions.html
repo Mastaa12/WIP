@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jsfunctions</title>
+</head>
+<body>
+    <h1>js Funktionen</h1>
+
+    <script>
+        var x = 5;
+        var f;
+
+        function toCelsius(fahrenheit) {
+            return ((fahrenheit - 30) / 2);
+        }
+        
+        var c = toCelsius(100);
+        
+        var fahrzeug = new Object;
+        fahrzeug.tueren = 2;
+        fahrzeug.raeder = 4;
+        fahrzeug.speed = 0;
+
+        fahrzeug.geschwindigkeit = function () {
+            this.speed = 12;
+        }
+
+        fahrzeug.geschwindigkeit();
+
+        var auto = function (tueren,raeder) {
+            this.tueren = tueren;
+            this.raeder = raeder;
+            this.speed = 0;
+            this.setSpeed = function (speed) {
+                this.speed = speed;
+            }
+        }
+
+        var a1 = new auto(5, 4);
+        var a2 = new auto(3, 4);
+ 
+
+    /*    fahrzeug.setSpeed = function (speed)
+        {
+            this.speed = speed;
+        } */
+
+
+
+        console.log("Temperatur in C: " + c);
+
+       // fahrzeug.setSpeed(50);
+        console.log(fahrzeug);
+        a1.setSpeed(50);
+
+
+
+        console.log(a1);
+        console.log(a2);
+
+        var schiff = { //Art der Beschreibung: angelehnt an JSON
+            motoren: 2,
+            speed: 0,
+            setSpeed: function(speed){
+                this.speed = speed;
+            },
+            badezimmer: 3,
+            pool: true,
+            farbe: "gruen",
+            besitzer: {vorname: 'Peter', nachname: 'Tutt'}
+        }
+
+        schiff.setSpeed(60);
+      //  console.log(schiff);
+        var jsonSchiff = JSON.stringify(schiff);
+        console.log(jsonSchiff);
+
+        var objSchiff = JSON.parse(jsonSchiff);
+        console.log(objSchiff);
+
+        //Arrays
+        var cars = new Array("Saab", "Volvo", "BMW");
+        var cars2 = ["Porsche", "Lotus"];
+        console.log(cars);
+        console.log(cars2);
+
+        var myArray = [];
+        myArray[0] = 14.3; //Array ist eine 'Liste', in die alles reingegeben werden kann, wie z.B. Objekte oder Funktionen
+        myArray[1] = "Bla";
+        myArray[2] = cars2;
+        myArray[3] = a1;
+
+        var jsonMyArray = JSON.stringify(myArray);
+
+
+        console.log(myArray.length);
+        console.log(myArray);
+        console.log(jsonMyArray);
+
+
+        var points = [40, 100, 1, 5, 25, 10]
+        console.log(points);
+
+
+        function NumSort(a, b) {
+            return a - b;
+        }
+        var numSortedPoints = points.sort(NumSort);
+        console.log(numSortedPoints);
+
+        myArray.push(new auto(4, 3));
+        console.log(myArray);
+
+ //       var sortedPoints = points.sort();
+ //       console.log(sortedPoints);
+    </script>
+
+</body>
+</html>

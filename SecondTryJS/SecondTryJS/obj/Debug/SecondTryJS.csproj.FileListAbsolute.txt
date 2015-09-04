@@ -1,0 +1,6 @@
+c:\users\localuser\documents\visual studio 2013\Projects\SecondTryJS\SecondTryJS\bin\SecondTryJS.dll.config
+c:\users\localuser\documents\visual studio 2013\Projects\SecondTryJS\SecondTryJS\bin\SecondTryJS.dll
+c:\users\localuser\documents\visual studio 2013\Projects\SecondTryJS\SecondTryJS\bin\SecondTryJS.pdb
+c:\users\localuser\documents\visual studio 2013\Projects\SecondTryJS\SecondTryJS\obj\Debug\SecondTryJS.csprojResolveAssemblyReference.cache
+c:\users\localuser\documents\visual studio 2013\Projects\SecondTryJS\SecondTryJS\obj\Debug\SecondTryJS.dll
+c:\users\localuser\documents\visual studio 2013\Projects\SecondTryJS\SecondTryJS\obj\Debug\SecondTryJS.pdb

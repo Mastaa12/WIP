@@ -1,0 +1,6 @@
+c:\users\localuser\documents\visual studio 2013\Projects\ThirdTry\ThirdTry\bin\ThirdTry.dll.config
+c:\users\localuser\documents\visual studio 2013\Projects\ThirdTry\ThirdTry\bin\ThirdTry.dll
+c:\users\localuser\documents\visual studio 2013\Projects\ThirdTry\ThirdTry\bin\ThirdTry.pdb
+c:\users\localuser\documents\visual studio 2013\Projects\ThirdTry\ThirdTry\obj\Debug\ThirdTry.csprojResolveAssemblyReference.cache
+c:\users\localuser\documents\visual studio 2013\Projects\ThirdTry\ThirdTry\obj\Debug\ThirdTry.dll
+c:\users\localuser\documents\visual studio 2013\Projects\ThirdTry\ThirdTry\obj\Debug\ThirdTry.pdb

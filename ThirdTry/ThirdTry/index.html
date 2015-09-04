@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jslanguage</title>
+
+    <script>
+        "use strict";
+    var pi = 3.14;
+    var person = "WIP";
+    var answer = 'Ich lebe!';
+    var regel = true;
+    var str1 = pi + person;
+    var x = 5;
+    var y = parseInt(prompt("Geben Sie bitte y ein"));
+    
+    console.log(y);
+
+    if (y > 10) {
+        console.log("y>10")
+    }
+    else {
+        console.log("y<10");
+    }
+
+    switch (y) {
+        case 0:
+            console.log("y=0");
+            break;
+        case 1:
+            console.log("y=1");
+            break;
+        default:
+            y = 6;
+    }
+
+
+    var i = 0;
+    for (i; i<10; i++)
+    {
+        console.log("Wert: " + i);
+    }
+
+    i = 0;
+    while (i < 2) {
+        console.log("While: " + i);
+        i++;
+    }
+
+    i = 0;
+    do {
+        console.log("Do: " + i);
+        i++;
+    }
+    while (i < 10);
+
+    </script>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <a href="jsfunctions.html">jsfunctions.html</a>
+        <a href="jsimages.html">jsimages.html</a>
+        <a href="jsCanvas.html">jsCanvas.html</a>
+    <script>
+
+    document.getElementById('demo').innerHTML = str1;
+    console.log(regel);
+
+    </script>
+
+
+
+</body>
+</html>

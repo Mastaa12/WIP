@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <!-- <script type="text/javascript">
+        // alert("Das ist Javascript");
+        //document.write("<h2>Yeah JavaScript!</h2>");
+        console.log(9 + 5);
+    </script> -->
+
+
+
+    <script>
+       
+        
+
+    //2 Initialisierungsroutine
+        function init() {
+            //3 Eventhandler für Button setzen
+            console.log("init entered");
+            document.getElementById('tag1').innerHTML = 'Anderer Inhalt';
+            document.getElementById('button1').addEventListener("click", KlickMichHandler, false);
+            document.getElementById('tag3').addEventListener("mouseover", MouseOverHandler, false);
+            document.getElementById('play').addEventListener("click", MusicHandler, false);
+        }
+
+
+
+
+        //1 Initialisierungsroutine starten
+        //window.onload = init; /*alte Javascript Methode*/
+
+        document.addEventListener("DOMContentLoaded", init, false);
+
+        console.log("End of Script");
+    </script>
+
+    <script src="KlickLibrary.js"></script>
+
+
+</head>
+<body>
+    <h1>JS Demo</h1>
+    <h2>What can Javascript do?</h2>
+
+    <p>html calls Javascript</p>
+    <div id="tag1">Ich bin HTML Text!</div>
+    <button id="button1">Klick mich!</button>
+
+    <div id="tag3">
+        Ich bin durch Mouseover veränderbar
+    </div>
+
+    <br />
+    <button id="play">Play/Pause</button>
+    <audio id="audio">
+        <source src="274.mp3" type="audio/mpeg" />
+    </audio>
+
+</body>
+</html>

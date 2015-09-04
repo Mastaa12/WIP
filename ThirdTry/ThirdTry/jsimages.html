@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jsimages</title>
+
+    <script>
+        var imageTemp = new Image;
+
+        function init(){
+            var image1 = document.getElementById("image1");
+            image1.src = "http://lorempixel.com/400/200/";
+            
+            document.getElementById('refresh').addEventListener("click", reload, false);
+        }
+
+        function reload() {
+            imageTemp.addEventListener("load", function () {
+                image1.src = imageTemp.src;
+            }, false);
+            imageTemp.src = "http://lorempixel.com/"+Math.floor(Math.random()*100)+"/200/";
+        }
+
+        
+
+        
+        window.addEventListener("DOMContentLoaded", init, false);
+        
+    </script>
+</head>
+<body>
+    <h1>js images</h1>
+
+    <img id="image1" />
+    <button id="refresh">Neues Bild!</button>
+
+</body>
+</html>

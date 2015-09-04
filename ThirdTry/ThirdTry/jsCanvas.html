@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jsCanvas</title>
+
+    <script>
+        var canvas;
+        var ctx;
+
+
+        function init() {
+            canvas = document.getElementById("canvas");
+            ctx = canvas.getContext("2d");
+            canvas.style.border = "red 1px solid";
+
+            var image1 = document.getElementById("image1");
+            var imagetmp = new Image;
+            imagetmp.addEventListener("load", function () {
+                image1.src = imagetmp.src;
+                ctx.drawImage(image1, 0, 0);
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect(0, 0, 50, 50);
+
+                ctx.moveTo(100, 100);
+                ctx.lineTo(200, 200);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.arc(95, 30, 50, 0, 2 * Math.PI);
+                ctx.stroke();
+
+                ctx.font = "30px Arial";
+                ctx.fillText("Hey from here", 300, 75);
+                
+            }, false);
+            imagetmp.src = "assets/sky.png";
+
+            
+        }
+
+
+
+        window.addEventListener("DOMContentLoaded", init, false);
+    </script>
+
+
+
+</head>
+<body>
+    <h1>Canvas</h1>
+
+    <canvas id="canvas" width="600" height="400"></canvas>
+    <img id="image1" src="" alt="" />
+    <img id="image2" src="" alt="" />
+
+</body>
+</html>

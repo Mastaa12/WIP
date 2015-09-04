@@ -1,0 +1,6 @@
+c:\users\localuser\documents\visual studio 2013\Projects\FirstTry\FirstTry\bin\FirstTry.dll.config
+c:\users\localuser\documents\visual studio 2013\Projects\FirstTry\FirstTry\bin\FirstTry.dll
+c:\users\localuser\documents\visual studio 2013\Projects\FirstTry\FirstTry\bin\FirstTry.pdb
+c:\users\localuser\documents\visual studio 2013\Projects\FirstTry\FirstTry\obj\Debug\FirstTry.csprojResolveAssemblyReference.cache
+c:\users\localuser\documents\visual studio 2013\Projects\FirstTry\FirstTry\obj\Debug\FirstTry.dll
+c:\users\localuser\documents\visual studio 2013\Projects\FirstTry\FirstTry\obj\Debug\FirstTry.pdb
