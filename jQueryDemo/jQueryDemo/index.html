@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<head>
+    <title>jQuery Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+    <script>
+        $(document).ready(
+            function () {
+                $("#button").click(function () { $("#test1").css('color', 'red'); });
+                $("p").click(function () { $("p").css('color', 'yellow'); });
+                $("#button2").click(function () { $("p").hide(500); });
+                $("#buttonLoadText").click(function () { $("#test2").load("daten.js"); });
+
+                $("#dialog1").dialog({
+                    height: 150;
+                resisable: 0;
+                }
+                );
+            });
+
+       
+       
+    </script>
+
+</head>
+<body>
+    <div id="test1">Ich bin da!</div>
+    <button id="button">Einfärben</button>
+    <button id="button2">Verstecken</button>
+    <button id="buttonLoadText">externen Text aus File laden</button>
+
+
+    <div id="test2">Originaltext</div>
+    <p>Paragraph1</p>
+    <p>Paragraph2</p>
+    <p>Paragraph3</p>
+    <p>Paragraph4</p>
+    <div id="dialog1">Daraus wird mein Dialog</div>
+
+</body>
+
